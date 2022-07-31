@@ -19,7 +19,7 @@ const calculateBill = () => {
 
   const perTotal = total / numberOfPeople;
 
-  console.log(perTotal);
+  //   console.log(perTotal);
 
   perPersonTotal.innerText = `${perTotal.toFixed(2)}`;
 };
@@ -34,7 +34,7 @@ const increasePeople = () => {
 
 const decreasePeople = () => {
   if (numberOfPeople <= 1) {
-    alert(`Hey, You can't have less than 1 person!`);
+    throw `Hey, You can't have less than 1 person!`;
     return;
   }
 
